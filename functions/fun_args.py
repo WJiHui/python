@@ -18,6 +18,14 @@ def default_args(a, b={}):
     b[a] = 1
     return b
 
+def test_args(*position_args, **keyword):
+    """
+    位置参数和关键字参数
+    test_args(1,3,4,im='im')
+    """
+    print(position_args)
+    print(keyword)
+
 
 if __name__ == '__main__':
     print(default_args('a'))  # {'a': 1}
